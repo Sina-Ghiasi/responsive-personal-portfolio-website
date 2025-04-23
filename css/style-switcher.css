@@ -32,6 +32,10 @@
 .style-switcher .s-icon i {
   line-height: 40px;
 }
+.slow-spin {
+  -webkit-animation: fa-spin 6s infinite linear;
+  animation: fa-spin 6s infinite linear;
+}
 .style-switcher .style-switcher-toggler {
   top: 0;
 }

@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sina ghiasi</title>
+    <title>وبسایت شخصی سینا قیاسی | برنامه نویس و توسعه دهنده وب</title>
+    <meta name="description"
+        content="سینا قیاسی دانشجوی رشته مهندسی کامپیوتر و برنامه نویس و توسعه دهنده حوزه وب هستم . برای ارتباط با من یا دیدن رزومه و نمونه کارهای من میتوانید از این سایت استفاده کنید " />
+    <meta name=”robots” content=”index, follow”>
+    <link rel="icon" href="images/favicon.png">
     <!-- CSS files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
@@ -31,7 +35,7 @@
         <!-- Aside start -->
         <div class="aside">
             <div class="logo">
-                <a href="#"><span>SG</span></a>
+                SG
             </div>
             <div class="nav-toggler">
                 <span></span>
@@ -100,7 +104,7 @@
                                             <p>ایمیل : <a href="mailto:sinasteyn@gmail.com">sinasteyn@gmail.com</a></p>
                                         </div>
                                         <div class="info-item padding-rl-15">
-                                            <p>شماره تماس : <a href="tel:+989056530320">989056530320+</a></p>
+                                            <p>شماره تماس : <a href="tel:+980000000000">980000000000+</a></p>
                                         </div>
                                         <div class="info-item padding-rl-15">
                                             <p>رشته : <span>مهندسی کامپیوتر نرم افزار</span></p>
@@ -345,44 +349,28 @@
                     <div class="row">
                         <div class="portfolio-item padding-rl-15">
                             <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-placeholder.jpg" alt="">
-                                </div>
+                                <a class="portfolio-img" href="https://github.com/Sina-Ghiasi/Three.js-Catapult-Game"
+                                    target="_blank">
+                                    <img src="images/portfolio/portfolio-1-min.PNG" alt="بازی تحت وب با جاوااسکریپت">
+                                </a>
                             </div>
                         </div>
                         <div class="portfolio-item padding-rl-15">
                             <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-placeholder.jpg" alt="">
-                                </div>
+                                <a class="portfolio-img"
+                                    href="https://github.com/Sina-Ghiasi/Responsive-personal-portfolio-website"
+                                    target="_blank">
+                                    <img src="images/portfolio/portfolio-2-min.PNG" alt="وبسایت شخصی واکنش گرا">
+                                </a>
                             </div>
                         </div>
                         <div class="portfolio-item padding-rl-15">
                             <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-placeholder.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padding-rl-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-placeholder.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padding-rl-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-placeholder.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item padding-rl-15">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/portfolio-placeholder.jpg" alt="">
-                                </div>
+                                <a class="portfolio-img" href="https://github.com/Sina-Ghiasi/wc-sync-with-3p-API"
+                                    target="_blank">
+                                    <img src="images/portfolio/portfolio-3-min.PNG"
+                                        alt="پلاگین وردپرس برای ارتباط با API">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -424,30 +412,32 @@
                     <h3 class="contact-title padding-rl-15">راحت و سریع تر ؟</h3>
                     <h4 class="contact-sub-title padding-rl-15">از فرم زیر استفاده کنین</h4>
                     <div class="row">
-                        <div class="contact-form padding-rl-15">
+                        <form id="contact-form" class="contact-form padding-rl-15" method="post"
+                            action="/php/contact-form-process.php">
                             <div class="row">
                                 <div class="form-item col-6 padding-rl-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="نام">
+                                        <input type="text" class="form-control" name="name" placeholder="نام">
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padding-rl-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="ایمیل">
+                                        <input type="email" class="form-control" name="email" placeholder="ایمیل">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padding-rl-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="عنوان">
+                                        <input type="text" class="form-control" name="subject" placeholder="عنوان">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padding-rl-15">
                                     <div class="form-group">
-                                        <textarea class="form-control" name="" id="" placeholder="پیام"> </textarea>
+                                        <textarea class="form-control" name="message" id=""
+                                            placeholder="پیام"> </textarea>
                                     </div>
                                 </div>
                             </div>
@@ -456,7 +446,7 @@
                                     <button type="submit" class="btn">ارسال</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -469,7 +459,7 @@
     <!-- Style switcher start -->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
+            <i class="fas fa-cog slow-spin"></i>
         </div>
         <div class="day-night s-icon">
             <i class="fas"></i>

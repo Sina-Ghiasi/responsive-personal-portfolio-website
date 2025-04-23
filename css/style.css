@@ -158,24 +158,21 @@ a {
   right: 0;
   top: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   z-index: 10;
   transition: right 0.3s ease;
+  overflow-y: auto;
 }
 .aside .logo {
-  position: absolute;
-  top: 50px;
   font-size: 30px;
-}
-.aside .logo a {
   color: var(--text-primary);
   font-weight: 600;
   padding: 15px 20px;
   font-size: 30px;
   position: relative;
 }
-.aside .logo a::before {
+.aside .logo::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -186,7 +183,7 @@ a {
   bottom: 0;
   left: 0;
 }
-.aside .logo a::after {
+.aside .logo::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -268,6 +265,17 @@ a {
 .aside .nav li a.active {
   color: var(--skin-color);
 }
+
+.aside.open::after {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(100vw - 270px);
+  height: 100%;
+  background-color: #111;
+  opacity: 98%;
+}
+
 /* home section */
 .home {
   min-height: 100vh;
@@ -675,7 +683,10 @@ h3.my-professtion {
     right: 30px;
   }
   .aside .nav-toggler.open {
-    right: 300px;
+    right: 205px;
+  }
+  .aside.open::after {
+    content: "";
   }
   .section {
     right: 0;
